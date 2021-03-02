@@ -1,0 +1,18 @@
+Khoa(makhoa char(10), tenkhoa char(30), dienthoai char(10))
+GiangVien(magv int, hotengv char(30), luong decimal(5,2), makhoa char(10))
+SinhVien(masv int, hotensv char(30), makhoa char(10), namsinh int, quequan char(30))
+DeTai(madt char(10), tendt char(30), kinhphi int, NoiThucTap char(30))
+HuongDan(masv int, madt char(10), magv int, ketqua decimal(5,2))
+
+
+
+1: Đưa ra thông tin gồm mã số, họ tênvà tên khoa của tất cả các giảng viên
+2: Đưa ra thông tin gồm mã số, họ tênvà tên khoa của các giảng viên của khoa ‘DIA LY va QLTN’
+3: Cho biết số sinh viên của khoa ‘CONG NGHE SINH HOC’
+4: Đưa ra danh sách gồm mã số, họ tênvà tuổi của các sinh viên khoa ‘TOAN’
+5: Cho biết số giảng viên của khoa ‘CONG NGHE SINH HOC’
+6: Cho biết thông tin về sinh viên không tham gia thực tập
+7: Đưa ra mã khoa, tên khoa và số giảng viên của mỗi khoa
+8: Cho biết số điện thoại của khoa mà sinh viên có tên ‘Le van son’ đang theo học
+9: Cho biết mã số, họ tên, tên khoa của các giảng viên hướng dẫn từ 3 sinh viên trở lên.
+10:Cho biết mã số và tên các đề tài có nhiều hơn 2 sinh viên tham gia thực tập
