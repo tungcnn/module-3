@@ -58,3 +58,28 @@ insert into borroworder values ('CG001', 2);
 insert into borroworder values ('CG003', 3);
 insert into borroworder values ('CG005', 4);
 insert into borroworder values ('CG005', 5);
+
+
+DELIMITER //
+create procedure test () 
+begin 
+	declare counter int default 0;
+	while counter < 100000 do
+		insert into book(_name, category_id) values(
+			'Book',
+            1
+        );
+        set counter = counter + 1;
+	end while;
+end//
+DELIMITER ;
+call test;
+
+create view test as 
+select s.student_number, s.student_name, b._name as BookTitle, c._name as Category
+from student s
+join borroworder bo on bo.student_number = s.student_number
+join book b on b.id = bo.book_id
+join category c on b.category_id = c.id;
+
+select * from test;
