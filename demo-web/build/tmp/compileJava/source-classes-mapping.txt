@@ -1,0 +1,10 @@
+controller/UserServlet.java
+ controller.UserServlet
+model/entities/Person.java
+ model.entities.Person
+model/service/PersonService.java
+ model.service.PersonService
+model/service/PersonServiceImpl.java
+ model.service.PersonServiceImpl
+controller/PersonServlet.java
+ controller.PersonServlet
